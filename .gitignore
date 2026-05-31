@@ -1,0 +1,7 @@
+# Ignorar credenciais
+
+# Ignorar ficheiros do sistema e Python
+__pycache__/
+*.pyc
+.DS_Store
+data/

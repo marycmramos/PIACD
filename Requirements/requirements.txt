@@ -1,0 +1,10 @@
+pytest
+pandas
+numpy
+entsoe-py
+cdsapi
+python-dotenv
+xarray
+joblib
+scikit-learn
+bcrypt

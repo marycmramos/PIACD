@@ -1,0 +1,105 @@
+
+image: python:latest
+
+
+variables:
+  BUILD_TYPE: draft 
+  GIT_DEPTH: 1 
+before_script:
+  - git config --global http.version HTTP/1.1 
+  - python --version
+  - pip install -r Requirements/requirements.txt
+  - echo "Hello, $GITLAB_USER_LOGIN!"
+  - echo $REPO_NAME
+  - echo $CI_COMMIT_BRANCH
+  - echo $CI_PROJECT_DIR
+  - pwd
+
+stages: 
+  - unit_tests
+  - integration
+  - quality
+  - security
+
+
+
+# **************** UNIT TESTING stage ****************************
+
+tests_add:
+  stage: unit_tests
+  script:
+    - echo "PROJECT DIR:"
+    - ls
+    - echo "TESTING DIR:"
+    - ls Testing/
+    - export PYTHONPATH=$CI_PROJECT_DIR
+    - pytest -v -m "not integration"
+
+
+
+# **************** INTEGRATION stage ****************************
+
+integration:
+  stage: integration
+  script:
+    - echo "Running integration tests... "
+    - echo $CI_COMMIT_BRANCH
+    - export PYTHONPATH=$CI_PROJECT_DIR
+    - pytest Testing/test_integration_pipeline.py -v   
+
+test_coverage:
+  stage: integration
+  before_script:
+    - pip install pytest pytest-cov
+    - pip install -r Requirements/requirements.txt
+  script:
+    - echo "Assessing test coverage..."
+    - echo $CI_COMMIT_BRANCH
+    - export PYTHONPATH=$CI_PROJECT_DIR
+    - pytest --cov=src --cov-report=html --cov-report=term
+  artifacts:
+    paths:
+      - htmlcov/
+    expire_in: 1 day
+
+
+
+# **************** QUALITY stage ****************************
+
+coding_style:
+  stage: quality
+  before_script:
+    - pip install flake8
+    - pip install -r Requirements/requirements.txt
+  script:
+    - echo "Checking coding style..."
+    - echo $CI_COMMIT_BRANCH
+    - flake8 src --max-line-length=120
+  allow_failure: true
+
+
+code_complexity:
+  stage: quality
+  before_script:
+    - pip install xenon
+    - pip install -r Requirements/requirements.txt
+  script:
+    - echo "Checking code complexity..."
+    - echo $CI_COMMIT_BRANCH
+    - xenon -b A -m A -a A src || true
+  allow_failure: true
+
+
+# **************** SECURITY stage ****************************
+
+security:
+  stage: security
+  before_script:
+    - pip install bandit
+    - pip install -r Requirements/requirements.txt
+  script:
+    - echo "Running security tests at application level..."
+    - echo $CI_COMMIT_BRANCH
+    - export PYTHONPATH=$CI_PROJECT_DIR
+    - bandit -r src -ll
+  allow_failure: false

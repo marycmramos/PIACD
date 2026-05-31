@@ -1,0 +1,32 @@
+2026-05-17 15:58:51,359 - Train Linear Regression: 0.0121 seconds
+2026-05-17 15:58:55,223 - Train Random Forest: 3.8635 seconds
+2026-05-17 15:58:55,223 - TOTAL TRAINING PIPELINE: 3.9587 seconds
+2026-05-17 15:58:55,302 - Load dataset: 0.0695 seconds
+2026-05-17 15:58:55,394 - Baseline evaluation: 0.0043 seconds
+2026-05-17 15:58:55,695 - Load models: 0.3006 seconds
+2026-05-17 15:58:55,790 - Model predictions: 0.0945 seconds
+2026-05-17 15:58:55,795 - Compute metrics: 0.0051 seconds
+2026-05-17 15:58:56,263 - TOTAL EVALUATION PIPELINE: 1.0309 seconds
+2026-05-17 16:02:26,849 - Weather pipeline: 62.87s
+2026-05-17 16:02:26,943 - Merge: 0.09s
+2026-05-17 16:02:27,029 - Train Linear Regression: 0.0105 seconds
+2026-05-17 16:02:30,551 - Train Random Forest: 3.5214 seconds
+2026-05-17 16:02:30,551 - TOTAL TRAINING PIPELINE: 3.6082 seconds
+2026-05-17 16:02:30,559 - Model training: 3.62s
+2026-05-17 16:02:30,619 - Load dataset: 0.0596 seconds
+2026-05-17 16:02:30,695 - Baseline evaluation: 0.0037 seconds
+2026-05-17 16:02:30,797 - Load models: 0.1024 seconds
+2026-05-17 16:02:30,860 - Model predictions: 0.0627 seconds
+2026-05-17 16:02:30,863 - Compute metrics: 0.0030 seconds
+2026-05-17 16:02:31,187 - TOTAL EVALUATION PIPELINE: 0.6274 seconds
+2026-05-17 16:02:31,194 - Model evaluation: 0.63s
+2026-05-17 16:02:31,194 - TOTAL PIPELINE: 67.25s
+2026-05-17 16:03:25,819 - Train Linear Regression: 0.0090 seconds
+2026-05-17 16:03:29,804 - Train Random Forest: 3.9843 seconds
+2026-05-17 16:03:29,804 - TOTAL TRAINING PIPELINE: 4.1298 seconds
+2026-05-17 16:03:29,895 - Load dataset: 0.0787 seconds
+2026-05-17 16:03:29,970 - Baseline evaluation: 0.0037 seconds
+2026-05-17 16:03:30,220 - Load models: 0.2495 seconds
+2026-05-17 16:03:30,332 - Model predictions: 0.1122 seconds
+2026-05-17 16:03:30,337 - Compute metrics: 0.0046 seconds
+2026-05-17 16:03:30,781 - TOTAL EVALUATION PIPELINE: 0.9647 seconds

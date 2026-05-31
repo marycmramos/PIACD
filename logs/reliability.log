@@ -1,0 +1,156 @@
+2026-05-17 15:58:51,264 - INFO - Starting MODELING ONLY pipeline...
+2026-05-17 15:58:51,288 - INFO - Config loaded successfully.
+2026-05-17 15:58:55,223 - INFO - Training pipeline completed successfully.
+2026-05-17 15:58:55,302 - INFO - Dataset loaded with 8759 rows.
+2026-05-17 15:58:55,389 - INFO - Train size: 6872, Test size: 1719
+2026-05-17 15:58:55,394 - INFO - Baseline (lag_1h) evaluated successfully.
+2026-05-17 15:58:55,695 - INFO - Models loaded successfully.
+2026-05-17 15:58:55,793 - INFO - Linear Regression evaluated successfully.
+2026-05-17 15:58:55,795 - INFO - Random Forest evaluated successfully.
+2026-05-17 15:58:55,802 - INFO - Residual analysis computed.
+2026-05-17 15:58:55,905 - INFO - Overfitting analysis computed.
+2026-05-17 15:58:56,259 - INFO - Full predictions saved to data/results//full_predictions.json
+2026-05-17 15:58:56,260 - INFO - Dashboard predictions saved to data/results//test_predictions.json
+2026-05-17 15:58:56,260 - INFO - Config loaded successfully.
+2026-05-17 15:58:56,262 - INFO - Results saved successfully.
+2026-05-17 15:58:56,263 - INFO - Experiments saved successfully.
+2026-05-17 15:58:56,263 - INFO - Evaluation pipeline completed successfully.
+2026-05-17 15:58:56,272 - INFO - Modeling only completed.
+2026-05-17 16:01:23,948 - INFO - Skipping ENERGY cleaning - file already exists: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\processed\energy_clean.csv
+2026-05-17 16:01:23,978 - INFO - Starting WEATHER pipeline...
+2026-05-17 16:01:23,978 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_01.nc
+2026-05-17 16:01:24,039 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_02.nc
+2026-05-17 16:01:24,095 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_03.nc
+2026-05-17 16:01:24,138 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_04.nc
+2026-05-17 16:01:24,196 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_05.nc
+2026-05-17 16:01:24,255 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_06.nc
+2026-05-17 16:01:24,315 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_07.nc
+2026-05-17 16:01:24,407 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_08.nc
+2026-05-17 16:01:24,526 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_09.nc
+2026-05-17 16:01:24,617 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_10.nc
+2026-05-17 16:01:24,706 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_11.nc
+2026-05-17 16:01:24,810 - INFO - Extracting: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_DE_2025_12.nc
+2026-05-17 16:01:24,908 - INFO - Real NetCDF files: 48
+2026-05-17 16:01:24,918 - INFO - Opening: weather_DE_2025_01_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:28,493 - INFO - Opening: weather_DE_2025_02_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:29,099 - INFO - Opening: weather_DE_2025_03_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:29,721 - INFO - Opening: weather_DE_2025_04_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:30,311 - INFO - Opening: weather_DE_2025_05_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:30,977 - INFO - Opening: weather_DE_2025_06_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:31,718 - INFO - Opening: weather_DE_2025_07_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:32,402 - INFO - Opening: weather_DE_2025_08_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:32,981 - INFO - Opening: weather_DE_2025_09_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:33,532 - INFO - Opening: weather_DE_2025_10_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:34,100 - INFO - Opening: weather_DE_2025_11_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:34,641 - INFO - Opening: weather_DE_2025_12_data_stream-oper_stepType-accum.nc
+2026-05-17 16:01:35,335 - INFO - Saved: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_2025_acc.csv
+2026-05-17 16:01:35,336 - INFO - Shape: (8760, 7)
+2026-05-17 16:01:35,336 - INFO - Opening: weather_DE_2025_01_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:35,908 - INFO - Opening: weather_DE_2025_02_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:36,863 - INFO - Opening: weather_DE_2025_03_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:38,268 - INFO - Opening: weather_DE_2025_04_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:39,473 - INFO - Opening: weather_DE_2025_05_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:40,820 - INFO - Opening: weather_DE_2025_06_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:42,083 - INFO - Opening: weather_DE_2025_07_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:43,778 - INFO - Opening: weather_DE_2025_08_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:45,006 - INFO - Opening: weather_DE_2025_09_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:46,213 - INFO - Opening: weather_DE_2025_10_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:47,462 - INFO - Opening: weather_DE_2025_11_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:48,745 - INFO - Opening: weather_DE_2025_12_data_stream-oper_stepType-avg.nc
+2026-05-17 16:01:50,522 - INFO - Saved: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_2025_avg.csv
+2026-05-17 16:01:50,523 - INFO - Shape: (8760, 5)
+2026-05-17 16:01:50,523 - INFO - Opening: weather_DE_2025_01_data_stream-oper_stepType-instant.nc
+2026-05-17 16:01:52,261 - INFO - Opening: weather_DE_2025_02_data_stream-oper_stepType-instant.nc
+2026-05-17 16:01:53,910 - INFO - Opening: weather_DE_2025_03_data_stream-oper_stepType-instant.nc
+2026-05-17 16:01:55,823 - INFO - Opening: weather_DE_2025_04_data_stream-oper_stepType-instant.nc
+2026-05-17 16:01:57,714 - INFO - Opening: weather_DE_2025_05_data_stream-oper_stepType-instant.nc
+2026-05-17 16:01:59,729 - INFO - Opening: weather_DE_2025_06_data_stream-oper_stepType-instant.nc
+2026-05-17 16:02:01,129 - INFO - Opening: weather_DE_2025_07_data_stream-oper_stepType-instant.nc
+2026-05-17 16:02:02,610 - INFO - Opening: weather_DE_2025_08_data_stream-oper_stepType-instant.nc
+2026-05-17 16:02:04,097 - INFO - Opening: weather_DE_2025_09_data_stream-oper_stepType-instant.nc
+2026-05-17 16:02:05,844 - INFO - Opening: weather_DE_2025_10_data_stream-oper_stepType-instant.nc
+2026-05-17 16:02:07,616 - INFO - Opening: weather_DE_2025_11_data_stream-oper_stepType-instant.nc
+2026-05-17 16:02:09,430 - INFO - Opening: weather_DE_2025_12_data_stream-oper_stepType-instant.nc
+2026-05-17 16:02:11,614 - INFO - Saved: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_2025_inst.csv
+2026-05-17 16:02:11,614 - INFO - Shape: (8760, 7)
+2026-05-17 16:02:11,614 - INFO - Opening: weather_DE_2025_01_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:13,097 - INFO - Opening: weather_DE_2025_02_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:14,488 - INFO - Opening: weather_DE_2025_03_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:15,868 - INFO - Opening: weather_DE_2025_04_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:17,422 - INFO - Opening: weather_DE_2025_05_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:18,677 - INFO - Opening: weather_DE_2025_06_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:19,855 - INFO - Opening: weather_DE_2025_07_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:21,235 - INFO - Opening: weather_DE_2025_08_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:22,538 - INFO - Opening: weather_DE_2025_09_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:23,875 - INFO - Opening: weather_DE_2025_10_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:25,203 - INFO - Opening: weather_DE_2025_11_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:25,798 - INFO - Opening: weather_DE_2025_12_data_stream-oper_stepType-max.nc
+2026-05-17 16:02:26,416 - INFO - Saved: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_2025_max.csv
+2026-05-17 16:02:26,416 - INFO - Shape: (8760, 6)
+2026-05-17 16:02:26,696 - INFO - Merged dataset saved: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\raw\weather\weather_2025_full.csv
+2026-05-17 16:02:26,696 - INFO - Final shape: (8760, 12)
+2026-05-17 16:02:26,745 - INFO - Initial shape: (8760, 12)
+2026-05-17 16:02:26,754 - INFO - After spatial aggregation: (8760, 12)
+2026-05-17 16:02:26,764 - INFO - Is timestamp already sorted? True
+2026-05-17 16:02:26,766 - INFO - Missing values:
+timestamp                   0
+latitude                    0
+longitude                   0
+convective_precipitation    0
+total_precipitation         0
+solar_radiation             0
+avg_ie                      0
+temperature                 0
+temp_max                    0
+temp_min                    0
+wind_speed                  0
+dtype: int64
+2026-05-17 16:02:26,849 - INFO - Clean dataset saved!
+2026-05-17 16:02:26,849 - INFO - Final shape: (8760, 11)
+2026-05-17 16:02:26,849 - INFO - Saved to: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\processed\weather_clean.csv
+2026-05-17 16:02:26,850 - INFO - Weather pipeline completed.
+2026-05-17 16:02:26,850 - INFO - Starting MERGE pipeline...
+2026-05-17 16:02:26,886 - INFO - Shape after merge: (8759, 12)
+2026-05-17 16:02:26,943 - INFO - Merged dataset saved: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\processed\dataset_merged.csv
+2026-05-17 16:02:26,943 - INFO - Final shape: (8759, 9)
+2026-05-17 16:02:26,943 - INFO - Merge pipeline completed.
+2026-05-17 16:02:26,943 - INFO - Skipping FEATURE ENGINEERING - file already exists: C:\Users\HP\Desktop\Projeto IA\projeto\pl1g4\data\processed\features.csv
+2026-05-17 16:02:26,943 - INFO - Starting MODEL TRAINING pipeline...
+2026-05-17 16:02:26,943 - INFO - Config loaded successfully.
+2026-05-17 16:02:30,551 - INFO - Training pipeline completed successfully.
+2026-05-17 16:02:30,559 - INFO - Model training completed.
+2026-05-17 16:02:30,559 - INFO - Starting MODEL EVALUATION pipeline...
+2026-05-17 16:02:30,619 - INFO - Dataset loaded with 8759 rows.
+2026-05-17 16:02:30,691 - INFO - Train size: 6872, Test size: 1719
+2026-05-17 16:02:30,695 - INFO - Baseline (lag_1h) evaluated successfully.
+2026-05-17 16:02:30,798 - INFO - Models loaded successfully.
+2026-05-17 16:02:30,862 - INFO - Linear Regression evaluated successfully.
+2026-05-17 16:02:30,863 - INFO - Random Forest evaluated successfully.
+2026-05-17 16:02:30,867 - INFO - Residual analysis computed.
+2026-05-17 16:02:30,960 - INFO - Overfitting analysis computed.
+2026-05-17 16:02:31,184 - INFO - Full predictions saved to data/results//full_predictions.json
+2026-05-17 16:02:31,184 - INFO - Dashboard predictions saved to data/results//test_predictions.json
+2026-05-17 16:02:31,184 - INFO - Config loaded successfully.
+2026-05-17 16:02:31,185 - INFO - Results saved successfully.
+2026-05-17 16:02:31,187 - INFO - Experiments saved successfully.
+2026-05-17 16:02:31,187 - INFO - Evaluation pipeline completed successfully.
+2026-05-17 16:02:31,194 - INFO - Model evaluation completed.
+2026-05-17 16:02:31,195 - INFO - Full pipeline completed successfully.
+2026-05-17 16:03:25,674 - INFO - Starting MODELING ONLY pipeline...
+2026-05-17 16:03:25,674 - INFO - Config loaded successfully.
+2026-05-17 16:03:29,804 - INFO - Training pipeline completed successfully.
+2026-05-17 16:03:29,895 - INFO - Dataset loaded with 8759 rows.
+2026-05-17 16:03:29,966 - INFO - Train size: 6872, Test size: 1719
+2026-05-17 16:03:29,970 - INFO - Baseline (lag_1h) evaluated successfully.
+2026-05-17 16:03:30,220 - INFO - Models loaded successfully.
+2026-05-17 16:03:30,335 - INFO - Linear Regression evaluated successfully.
+2026-05-17 16:03:30,337 - INFO - Random Forest evaluated successfully.
+2026-05-17 16:03:30,344 - INFO - Residual analysis computed.
+2026-05-17 16:03:30,467 - INFO - Overfitting analysis computed.
+2026-05-17 16:03:30,778 - INFO - Full predictions saved to data/results//full_predictions.json
+2026-05-17 16:03:30,778 - INFO - Dashboard predictions saved to data/results//test_predictions.json
+2026-05-17 16:03:30,778 - INFO - Config loaded successfully.
+2026-05-17 16:03:30,780 - INFO - Results saved successfully.
+2026-05-17 16:03:30,781 - INFO - Experiments saved successfully.
+2026-05-17 16:03:30,781 - INFO - Evaluation pipeline completed successfully.
+2026-05-17 16:03:30,788 - INFO - Modeling only completed.

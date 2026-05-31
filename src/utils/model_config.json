@@ -1,0 +1,16 @@
+{
+    "split": {
+        "test_size": 0.2
+    },
+    "linear_regression": {
+        "fit_intercept": true,
+        "positive": true
+    },
+    "random_forest": {
+        "n_estimators": 170,
+        "max_depth": 17,
+        "min_samples_split": 3,
+        "min_samples_leaf": 3,
+        "random_state": 36
+    }
+}
