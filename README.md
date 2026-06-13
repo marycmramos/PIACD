@@ -1,130 +1,38 @@
 # Climate-Driven Energy Demand Analytics System
 
-An AI-driven analytics platform for electricity demand forecasting using climate and energy consumption data. The system integrates automated data ingestion, preprocessing pipelines, machine learning forecasting models and interactive visualizations to support energy demand analysis and decision-making.
+Climate-Driven Energy Demand Analytics System is an AI-driven platform designed to forecast electricity demand using climate and energy consumption data. The project combines data engineering, machine learning and interactive visualization to provide accurate demand predictions and support energy-related decision making.
 
-## Overview
+## Key Features
 
-The project combines climate and electricity consumption data from public European sources to predict future energy demand. It provides tools for data ingestion, preprocessing, model training, prediction generation, model evaluation and visualization through a user-friendly web interface.
-
-## Features
-
-- User authentication and role-based access control
-- Automated data ingestion from:
-  - ENTSO-E Transparency Platform
-  - Copernicus ERA5 Climate Data Store
-- Data cleaning and alignment pipelines
-- Feature engineering and preprocessing
-- Machine Learning forecasting models:
-  - Linear Regression
-  - Random Forest
-- Hyperparameter optimization with Grid Search
-- Model evaluation using:
-  - MAE
-  - RMSE
-  - R² Score
-- Residual and overfitting analysis
-- Interactive dashboards and visualizations
-- Prediction history management
-- Execution logs and monitoring
-- CI/CD and automated testing
-
-## System Architecture
-
-The system follows a layered architecture composed of:
-
-- Presentation Layer (Streamlit)
-- Authentication & Authorization Layer
-- Data Ingestion Layer
-- Data Processing Layer
-- Feature Engineering Layer
-- Machine Learning Layer
-- Prediction Services
-- Visualization Layer
-- Monitoring & Logging Layer
-
-## Machine Learning Pipeline
-
-1. Data Ingestion
-2. Data Cleaning
-3. Dataset Integration
-4. Feature Engineering
-5. Model Training
-6. Hyperparameter Optimization
-7. Model Evaluation
-8. Prediction Generation
-9. Visualization and Monitoring
+* Automated ingestion of climate and electricity demand data
+* Data preprocessing and feature engineering pipelines
+* Electricity demand forecasting using Machine Learning
+* Hyperparameter optimization and model evaluation
+* Interactive dashboards and visual analytics
+* User authentication and role-based access control
 
 ## Technologies
 
-### Machine Learning & Data Science
-- Python
-- Scikit-learn
-- Pandas
-- NumPy
-- Joblib
+* Python
+* Scikit-learn
+* Pandas & NumPy
+* Streamlit
+* ENTSO-E API
+* ERA5 Climate Data
+* GitLab CI/CD
+* Bcrypt
 
-### Climate & Energy Data
-- ENTSO-E API
-- ERA5 Climate Data
-- Xarray
-- NetCDF
+## Machine Learning Models
 
-### Web Application
-- Streamlit
+* Linear Regression
+* Random Forest
 
-### DevOps & Quality Assurance
-- Git
-- GitLab CI/CD
-- Unit Testing
-- Integration Testing
+Models were evaluated using MAE, RMSE and R² metrics, alongside residual and overfitting analysis.
 
-### Security
-- Bcrypt Password Hashing
-- Role-Based Access Control (RBAC)
+## Objectives
 
-## Main Use Cases
-
-### User Management
-- User Registration
-- User Authentication
-- Role Management
-
-### Data Operations
-- Data Ingestion
-- Data Cleaning and Alignment
-- Feature Engineering
-
-### Machine Learning
-- Model Training
-- Model Evaluation
-- Hyperparameter Optimization
-- Prediction Generation
-
-### Analytics & Visualization
-- Dashboard Visualization
-- Climate-Energy Relationship Analysis
-- Real-Time Prediction Visualization
-- Extreme Climate Alert Analysis
-
-### Administration
-- Pipeline Execution
-- Execution Logs
-- System Testing
-
-## Results
-
-The platform enables:
-
-- Climate-aware electricity demand forecasting
-- Comparative evaluation of forecasting models
-- Analysis of climate impacts on energy consumption
-- Interactive visualization of predictions and model performance
-- Reproducible end-to-end machine learning workflows
+The main goal of this project is to explore the relationship between climate conditions and electricity demand while providing a complete end-to-end machine learning workflow, from data ingestion to prediction visualization.
 
 ## Authors
 
 Developed as part of the BSc in Artificial Intelligence and Data Science at the University of Coimbra.
-
-## License
-
-This project was developed for academic purposes.
